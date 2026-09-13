@@ -113,7 +113,7 @@ Our proposed deep learning framework with CSP spatial filtering outperforms seve
 │   ├── classification_alldata_allchannel_rangefour.m  # MATLAB script for filtering, CAR, CSP & epoching
 │   └── alldata_allchannel_RP_rangefour_concat.m       # MATLAB script generating 2D Recurrence Plots
 ├── models/
-│   ├── deepconvnet_allchannel_rangefour.py            # DeepConvNet model with 5-Fold Stratified CV
+│   ├── deepconvnet_allchannel_rangefour_car.py            # DeepConvNet model with 5-Fold Stratified CV
 │   ├── eegnet_allchannel_rangefour.py                 # EEGNet architecture implementation
 │   └── xception_rp_alldata_allchannel_rangefour_concat.py # Xception CNN fine-tuning on RP images
 ├── assets/                                            # Screenshots, diagrams, and ROC plots
