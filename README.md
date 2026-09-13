@@ -110,7 +110,7 @@ Our proposed deep learning framework with CSP spatial filtering outperforms seve
 
 ```text
 ├── data_preprocessing/
-│   ├── classification_alldata_allchannel_rangefour.m         # MATLAB script for filtering, CAR, CSP & epoching
+│   ├── classification_alldata_allchannel_rangefour.m         # MATLAB script for filtering, CAR, CSP & Classifying
 │   └── alldata_allchannel_RP_rangefour_concat.m              # MATLAB script generating 2D Recurrence Plots
 ├── models/
 │   ├── deepconvnet_allchannel_rangefour_car.py               # DeepConvNet model with 5-Fold Stratified CV
