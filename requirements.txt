@@ -1,0 +1,7 @@
+tensorflow>=2.4.0
+keras
+scikit-learn
+scipy
+numpy
+matplotlib
+pillow
