@@ -149,3 +149,28 @@ label_t = zeros(1, size(alldata_allchannel_rangefour_T_classification, 2));
 label_data = [label_l, label_t];
 final_alldata_allchannel = [alldata_allchannel; label_data]';
 
+%% Machine Learning Classification using Classification Learner App
+
+% Prepare predictor matrix (X) and response labels (Y)
+% Rows correspond to observations (trials) and columns correspond to features (time-series points)
+X = final_alldata_allchannel(:, 1:end-1); 
+Y = final_alldata_allchannel(:, end);
+
+% Open the MATLAB Classification Learner App
+classificationLearner;
+
+%{
+--------------------------------------------------------------------------------
+INSTRUCTIONS FOR USING CLASSIFICATION LEARNER APP:
+--------------------------------------------------------------------------------
+1. After running this script, the "Classification Learner" window will automatically open.
+2. Click on "New Session" -> "From Workspace".
+3. In the setup window:
+   - Select 'X' as your Predictors (Features).
+   - Select 'Y' as your Response (Labels: 1 for Lie, 0 for Truth).
+4. Choose your Data Split method (e.g., 5-fold or 10-fold Cross-Validation, or Holdout Validation).
+5. Click "Start Session".
+6. In the top toolstrip, select any machine learning model (e.g., SVM, Decision Trees, 
+   KNN, Ensemble Classifiers, or Train All Models) and click "Train".
+--------------------------------------------------------------------------------
+%}
